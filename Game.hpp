@@ -15,13 +15,13 @@ namespace NBA {
         Team *out;
         Team *winner;
         Team *loser;
-        League *league;
+//        League *league;
         int score_out;
         int score_home;
 
 
     public:
-        Game( Team& home_,Team& out_ , League * league_);
+        Game( Team& home_,Team& out_) ;
 
 
         int getScoreOut() const;

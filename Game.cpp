@@ -6,15 +6,18 @@
 #include "Game.hpp"
 #include "random"
 
-NBA::Game::Game(NBA::Team &home_, NBA::Team &out_ , NBA::League * l) {
+NBA::Game::Game(NBA::Team &home_, NBA::Team &out_ ) {
+
+
     this->home = &home_;
     this->out = &out_;
-    this->league= l;
+//    this->league= &l;
     std::random_device rd; // obtain a random number from hardware
     std::mt19937 gen(rd()); // seed the generator
     std::normal_distribution<> distr_out(50, 100);
     std::normal_distribution<> distr_home(55, 100);
 
+ // std:: cout << this->home->getWin() << std ::endl;
     const int min_o = 50;
     const int min_h = 55;
     const int max = 100;
@@ -34,7 +37,14 @@ NBA::Game::Game(NBA::Team &home_, NBA::Team &out_ , NBA::League * l) {
     home_.getTalent() > out_.getTalent() ? score_h += 10 : score_o += 10;
 
     setScoreHome(score_h);
+
+
+
+
     setScoreOut(score_o);
+
+//    this->home->setScore(score_h);
+//    this->out->setScore(score_o);
     if (score_o == score_h) {
         std::normal_distribution<> coins(55, 100);
         coin = (int) coins(gen);
@@ -52,12 +62,23 @@ NBA::Game::Game(NBA::Team &home_, NBA::Team &out_ , NBA::League * l) {
         setWinner(this->out);
         setLoser(this->home);
      //   this->league->updateLeague(this->getWinner()->getName() , this->getLoser()->getName(),this->score_out,this->score_home);
+        this->home->setWin(1);
     }
     else {
         setWinner(this->home);
         setLoser(this->out);
+        this->out->setWin(1);
     //    this->league->updateLeague(this->getWinner()->getName() , this->getLoser()->getName(),this->score_home,this->score_out);
     }
+
+//    std:: cout << "------------------------this is test  -------------------------------- \n" ;
+//
+//    for (int i = 0; i < this->league->getMyTeam().size(); ++i) {
+//        std ::cout << this->league->getMyTeam().at(i).getName()   << " --->   " << this->league->getMyTeam().at(i).getScore() << std::endl;
+//
+//    }
+//    std:: cout << "------------------------end  test  -------------------------------- \n";
+
 
 
 }

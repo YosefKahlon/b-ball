@@ -12,6 +12,7 @@ namespace NBA {
     private:
         std::string name;
         float talent ;
+        int win;
 
     public:
         Team(const std::string& name_ , float talent_);
@@ -22,6 +23,10 @@ namespace NBA {
         float getTalent() const;
 
         void setTalent(float talent);
+
+        int getWin() const;
+
+        void setWin(int W);
 
         bool operator != (const Team &other ) const;
     };

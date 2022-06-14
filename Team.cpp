@@ -8,6 +8,7 @@
 NBA::Team::Team(const std::string &name_, float talent_) {
     this->name = name_;
     this->talent = talent_;
+    this->win = 0;
 }
 
 
@@ -25,6 +26,14 @@ const std::string &NBA::Team::getName() const {
 
 bool NBA::Team::operator!=(const NBA::Team &other) const {
     return this->getName() != other.getName();
+}
+
+int NBA::Team::getWin() const {
+    return this->win;
+}
+
+void NBA::Team::setWin(int w) {
+    this->win += w;
 }
 
 

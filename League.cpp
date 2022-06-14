@@ -13,18 +13,23 @@
 
 using namespace std;
 
-NBA::League::League(const std::vector<Team> &set1) {
+NBA::League::League(std::vector<Team> &set1) {
 //    Team a{"F",4};
 //    set1.push_back(a);
 
     if (set1.size() == 20) {
-        this->myLeague = set1;
+      //  this->myLeague
+        for (int i = 0; i < set1.size(); ++i) {
+            this->myLeague.push_back(&set1.at(i));
+        }
 
 
     }
         /** complete  the league to 20 teams **/
     else {
-        this->myLeague = set1;
+        for (int i = 0; i < set1.size(); ++i) {
+            this->myLeague.push_back(&set1.at(i));
+        }
 
 
         std::string str;
@@ -42,7 +47,7 @@ NBA::League::League(const std::vector<Team> &set1) {
             std::uniform_int_distribution<> distr(1, 10); // define the range
             float star = distr(gen);
             Team temp_team{name, star};
-            this->myLeague.push_back(temp_team);
+            this->myLeague.push_back(&temp_team);
         }
 
     }
@@ -64,8 +69,14 @@ NBA::League::League() {
         std::mt19937 gen(rd()); // seed the generator
         std::uniform_int_distribution<> distr(1, 10); // define the range
         float star = distr(gen);
+
         Team temp_team{name, star};
-        this->myLeague.push_back(temp_team);
+        this->helper.push_back(temp_team);
+    }
+
+
+    for (int i = 0; i < 20; ++i) {
+        this->myLeague.push_back(&helper.at(i));
     }
 
 }
@@ -73,8 +84,8 @@ NBA::League::League() {
 
 // print
 
-const vector<NBA::Team> &NBA::League::getMyTeam() const {
-    return this->myLeague;
+const vector<NBA::Team *> &NBA::League::getMyTeam() const {
+    return (this->myLeague);
 }
 
 

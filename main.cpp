@@ -62,14 +62,18 @@ int main() {
 
 
 
-    League myl{l};
+    League myl{};
     Schedule s(myl);
+    for (int i = 0; i < myl.getMyTeam().size(); ++i) {
+        cout << (myl.getMyTeam().at(i))->getName()   << " ---> " << myl.getMyTeam().at(i)->getWin()<< endl;
 
+    }
+//
 //        NBA::Team a{"a", 4.5};
 //        NBA::Team b{"b", 4.5};
 //
-  //     NBA::Game g{a, b,myl};
-////        std::cout << "p " << g.getWinner()->getName() <<"\n";
+//        NBA::Game g{a, b,myl};
+//        std::cout << "p " << b.getScore() <<"\n";
 //
 ////
 ////        l.push_back(a);
