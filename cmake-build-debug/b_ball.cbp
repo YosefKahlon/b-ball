@@ -82,7 +82,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.cpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.hpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/League.cpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/League.hpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.cpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.hpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.cpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.hpp">
+			<Option target="b_ball"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/main.cpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/season.cpp">
+			<Option target="b_ball"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/season.hpp">
 			<Option target="b_ball"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/97252/Documents/GitHub/b-ball/CMakeLists.txt">
