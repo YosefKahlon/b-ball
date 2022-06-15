@@ -19,6 +19,7 @@ namespace NBA {
 
     public:
         explicit Schedule(League &league_) ;
+//        bool operator < (const Team &other ) const;
 
     };
 }

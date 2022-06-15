@@ -25,14 +25,17 @@ namespace NBA {
 
         const std::vector<Team *> &getMyTeam() const;
 
-//        // return the n top team
-//        std::vector<Team> top_n(int n);
-//
-//        std::vector<Team> get_team();
-//
-        //  void updateLeague(std::string win ,std::string lose , int score_win ,int  score_lose);
+        // stat
+        std::vector<std::string> top_n(int n);
+        std::tuple<std::string , int> Sequence_of_victories();
+        std::tuple<std::string , int> Sequence_of_losses();
+        std::tuple<std::string, int> max_score();
+        int Scored_than_absorbed();
 
-        // League(League *pLeague);
+
+
+        friend std::ostream &operator<<(std::ostream &os, const League &output );
+
     };
 }
 

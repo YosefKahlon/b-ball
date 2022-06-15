@@ -24,21 +24,7 @@ namespace NBA {
         Game( Team& home_,Team& out_) ;
 
 
-        int getScoreOut() const;
 
-        void setScoreOut(int scoreOut);
-
-        int getScoreHome() const;
-
-        void setScoreHome(int scoreHome);
-
-        Team *getWinner() const;
-
-        void setWinner(Team *winner);
-
-        void setLoser(Team *loser);
-
-        Team *getLoser() const;
     };
 }
 

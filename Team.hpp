@@ -13,22 +13,49 @@ namespace NBA {
         std::string name;
         float talent ;
         int win;
+        int lose;
+        int win_lose;
+        int max_win;
+        int max_lose;
+        int score;
+        int count_win;
+        int count_lose;
+        int Absorbed;
 
     public:
         Team(const std::string& name_ , float talent_);
 
+        int getAbsorbed() const;
+
+        void add_absored(int absorbed);
+
+        int getScore() const;
+
+        void addScore(int score);
 
         const std::string &getName() const;
 
         float getTalent() const;
 
-        void setTalent(float talent);
-
         int getWin() const;
 
-        void setWin(int W);
+        int getLose() const;
 
+        int getWinLosse() const;
+
+        void setWinLosse(int winLosse);
+
+        int getMaxWin() const;
+
+        bool operator > (const Team &other ) const;
+        bool operator < (const Team &other ) const;
+        bool operator == (const Team &other ) const;
         bool operator != (const Team &other ) const;
+        int getMaxLost() const;
+
+
+        void addLose();
+        void addWin();
     };
 
 }
