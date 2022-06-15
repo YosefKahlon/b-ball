@@ -30,6 +30,7 @@ namespace NBA {
         std::tuple<std::string , int> Sequence_of_victories();
         std::tuple<std::string , int> Sequence_of_losses();
         std::tuple<std::string, int> max_score();
+        std::tuple<std::string , float> top_talent();
         int Scored_than_absorbed();
 
 

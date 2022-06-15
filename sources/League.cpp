@@ -171,6 +171,22 @@ std::tuple<std::string, int> NBA::League::max_score() {
     return ans;
 }
 
+std::tuple<std::string, float> NBA::League::top_talent()  {
+    string temp;
+    float talent = 0;
+
+    for (int i = 0; i < this->myLeague.size(); ++i) {
+        if (talent < this->myLeague.at(i)->getTalent()) {
+            talent = this->myLeague.at(i)->getTalent();
+            temp = this->myLeague.at(i)->getName();
+        }
+    }
+
+    tuple<std::string, float> ans = {temp, talent};
+    return ans;
+}
+
+
 int NBA::League::Scored_than_absorbed() {
     int count = 0;
 
@@ -206,6 +222,7 @@ std::ostream &NBA::operator<<(ostream &os, const League &other) {
     return os;
 
 }
+
 
 
 
