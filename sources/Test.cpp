@@ -31,4 +31,10 @@ TEST_CASE ("League") {
             CHECK(get<1>(l.top_talent()) < 1);
             CHECK(get<1>(l.top_talent()) > 0);
             CHECK(get<1>(l.Sequence_of_victories()) > 0);
+
+    for (int i = 0; i < 20; ++i) {
+        vector<string> top_n = l.top_n(i);
+                CHECK_EQ(top_n.size(), i);
+    }
+
 }
