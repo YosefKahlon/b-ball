@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/b_ball.dir/main.cpp.o CMakeFiles/b_ball.dir/Team.cpp.o CMakeFiles/b_ball.dir/Game.cpp.o CMakeFiles/b_ball.dir/League.cpp.o CMakeFiles/b_ball.dir/Schedule.cpp.o CMakeFiles/b_ball.dir/season.cpp.o  -o b_ball 
+/usr/bin/c++  -g   CMakeFiles/b_ball.dir/main.cpp.o CMakeFiles/b_ball.dir/sources/Team.cpp.o CMakeFiles/b_ball.dir/sources/Game.cpp.o CMakeFiles/b_ball.dir/sources/League.cpp.o CMakeFiles/b_ball.dir/sources/Schedule.cpp.o  -o b_ball 

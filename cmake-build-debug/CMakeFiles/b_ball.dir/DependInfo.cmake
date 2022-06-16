@@ -4,12 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/Game.cpp.o"
-  "/mnt/c/Users/97252/Documents/GitHub/b-ball/League.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/League.cpp.o"
-  "/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/Schedule.cpp.o"
-  "/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/Team.cpp.o"
   "/mnt/c/Users/97252/Documents/GitHub/b-ball/main.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/main.cpp.o"
-  "/mnt/c/Users/97252/Documents/GitHub/b-ball/season.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/season.cpp.o"
+  "/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Game.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/sources/Game.cpp.o"
+  "/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/League.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/sources/League.cpp.o"
+  "/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Schedule.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/sources/Schedule.cpp.o"
+  "/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Team.cpp" "/mnt/c/Users/97252/Documents/GitHub/b-ball/cmake-build-debug/CMakeFiles/b_ball.dir/sources/Team.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -16,7 +16,7 @@ NBA::Game::Game(NBA::Team &home_, NBA::Team &out_ ) {
 
     std::random_device rd; // obtain a random number from hardware
     std::mt19937 gen(rd()); // seed the generator
-    //TODO
+
     std::normal_distribution<> distr_out(75, 15);
     std::normal_distribution<> distr_home(75, 15);
 

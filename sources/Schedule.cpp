@@ -24,21 +24,21 @@ NBA::Schedule::Schedule(NBA::League &league_) {
     for (int day = 0; day < numDays; day++) {
 
         // std::cout << "------------- Day --------------" << (day + 1) << std::endl;
-        int teamIdx = day % teamsSize;
+      int teamIdx = day % teamsSize;
 
         if (day + 1 <= 19) {
 
             //    std::cout << "{0} vs {1}" << teams[teamIdx].getName() << "      " << first.getName() << "\n" << std::endl;
-            Game game{*(teams[teamIdx]), *first};
+            Game game{*(teams[(unsigned long)teamIdx]), *first};
             games.push_back(game);
 
             for (int idx = 1; idx < halfSize; idx++) {
-                int firstTeam = (day + idx) % teamsSize;
-                int secondTeam = (day + teamsSize - idx) % teamsSize;
+               int firstTeam = (day + idx) % teamsSize;
+                 int secondTeam = (day + teamsSize - idx) % teamsSize;
 
                 //  std::cout << "{0} vs {1}" << teams[firstTeam].getName() << "      " << teams[secondTeam].getName()
                 //          << "\n" << std::endl;
-                Game game{*(teams[firstTeam]), *(teams[secondTeam])};
+                Game game{*(teams[(unsigned long)firstTeam]), *(teams[(unsigned long)secondTeam])};
                 games.push_back(game);
 
 
@@ -47,7 +47,7 @@ NBA::Schedule::Schedule(NBA::League &league_) {
 
 
             // std::cout << "{0} vs {1}" << teams[teamIdx].getName() << "      " << first.getName() << "\n" << std::endl;
-            Game game{*first, *teams[teamIdx]};
+            Game game{*first, *teams[(unsigned long)teamIdx]};
             games.push_back(game);
 
             for (int idx = 1; idx < halfSize; idx++) {
@@ -56,7 +56,7 @@ NBA::Schedule::Schedule(NBA::League &league_) {
 
                 //     std::cout << "{0} vs {1}" << teams[firstTeam].getName() << "      " << teams[secondTeam].getName()
                 //             << "\n" << std::endl;
-                Game game{*(teams[firstTeam]), *(teams[secondTeam])};
+                Game game{*(teams[(unsigned long)firstTeam]), *(teams[(unsigned long)secondTeam])};
                 games.push_back(game);
 
             }

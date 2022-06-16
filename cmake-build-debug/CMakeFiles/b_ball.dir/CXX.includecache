@@ -6,21 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.cpp
-iostream
--
-Game.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.hpp
-random
-/mnt/c/Users/97252/Documents/GitHub/b-ball/random
-
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Game.hpp
 Team.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Team.hpp
 League.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/League.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/League.hpp
 
-/mnt/c/Users/97252/Documents/GitHub/b-ball/League.cpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/League.cpp
 iostream
 -
 fstream
@@ -32,15 +24,15 @@ vector
 algorithm
 -
 League.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/League.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/League.hpp
 Game.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Game.hpp
 Team.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Team.hpp
 random
-/mnt/c/Users/97252/Documents/GitHub/b-ball/random
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/random
 
-/mnt/c/Users/97252/Documents/GitHub/b-ball/League.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/League.hpp
 unordered_map
 -
 vector
@@ -48,39 +40,9 @@ vector
 map
 -
 Team.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Team.hpp
 
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.cpp
-iostream
--
-Schedule.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.hpp
-algorithm
--
-
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.hpp
-unordered_map
--
-League.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/League.hpp
-Game.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.hpp
-
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.hpp
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/Team.hpp
 string
-/mnt/c/Users/97252/Documents/GitHub/b-ball/string
-
-/mnt/c/Users/97252/Documents/GitHub/b-ball/main.cpp
-iostream
--
-Team.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Team.hpp
-Game.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Game.hpp
-League.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/League.hpp
-Schedule.hpp
-/mnt/c/Users/97252/Documents/GitHub/b-ball/Schedule.hpp
-vector
--
+/mnt/c/Users/97252/Documents/GitHub/b-ball/sources/string
 
